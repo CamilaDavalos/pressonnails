@@ -30,7 +30,7 @@
 
 /* Estilos para el INDEX */
 /*Estilo para el header*/
-.barra__header--i{
+.barra__header--i {
     top: 0;
     background-color: rgb(213, 197, 199);
     z-index: 1;
@@ -41,34 +41,34 @@
     align-items: flex-end;
 }
 
-.logoin{
+.logoin {
     height: calc(7.2rem - 3px);
     width: auto;
     display: flex;
     justify-items: start;
 }
 
-.barra__header--menu{
+.barra__header--menu {
     margin-bottom: 1.2vh;
     margin-right: 0.3vw;
 }
 
 /*menu desplegable*/
 #check,
-.checkbtn{
+.checkbtn {
     display: none;
 }
 
-.barra__header--menu ul{
+.barra__header--menu ul {
     display: flex;
     justify-content: end;
 }
 
-.barra__header--menu ul li{
+.barra__header--menu ul li {
     list-style-type: none;
 }
 
-.barra__header--menu ul li a{
+.barra__header--menu ul li a {
     margin: 0 1.2vw;
     text-align: center;
     text-decoration: underline bottom;
@@ -76,10 +76,11 @@
     font-size: 2.2rem;
     font-family: garetbook;
 }
+
 /* Estilos para el main */
 
 .index__main {
-    background-color: rgb(205, 158, 155);
+    background-color: white;
     border-bottom: 3px solid grey;
 }
 
@@ -94,8 +95,8 @@
 
 /*Estilo para el footer*/
 
-.rfooter{
-    background-color: rgb(213, 197, 199) ;
+.rfooter {
+    background-color: rgb(213, 197, 199);
     height: 7.2rem;
     display: flex;
     flex-direction: column;
@@ -104,7 +105,7 @@
     padding-top: 1.2vw;
 }
 
-.footer__titulo{
+.footer__titulo {
     font-family: garetbook;
     display: flex;
     align-items: end;
@@ -112,24 +113,189 @@
 
 .footer__titulo a,
 .footer__titulo a:link,
-.footer__titulo a:visited{
+.footer__titulo a:visited {
     text-decoration: none;
     color: gray;
 }
 
-.rfooter__iconos{
+.rfooter__iconos {
     margin-top: 1vh;
     display: flex;
     justify-content: space-evenly;
     width: 10vw;
 }
 
-.rfooter__iconos figure img{
+.rfooter__iconos figure img {
     height: 1.25rem;
     width: 1.25rem;
 }
 
 /*_______________________________________________________________________________*/
+
+/*Animaciones para el head*/
+.animar:hover {
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+
+/*_______________________________________________________________________________*/
+
+/* Query para celulares */
+
+@media screen and (max-width:479px) {
+
+    /* Estilos para el INDEX */
+    /* Estilos para el header */
+
+
+    .barra__header--i {
+        height: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Estilos para el main */
+
+    .index__main {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .imgmain {
+        height: 69.5vh;
+        width: 100vw;
+    }
+    
+
+    /* Estilos para el footer */
+
+    .rfooter {
+        align-self: center;
+        margin-right: 0;
+        height: auto;
+    }
+
+    .footer__titulo {
+        font-size: 7vw;
+    }
+
+    .footer__titulo a,
+    .footer__titulo a:link,
+    .footer__titulo a:visited {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .footer__iconos {
+        margin-top: 1vh;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer__iconos figure img {
+        height: 6vw;
+        width: 6vw;
+    }
+
+    /* Estilos para el resto de headers */
+
+    .barra__header {
+        height: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .barra__header--titulo a img {
+        height: calc(5rem - 3px);
+    }
+
+    .barra__header--menu {
+        padding-top: 1rem;
+        margin-right: 1vw;
+    }
+
+    .checkbtn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-right: 1vw;
+    }
+
+    .checkbtn img {
+        height: 2.5rem;
+    }
+
+    .barra__header--menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        left: 500vw;
+        top: 5rem;
+        width: 100vw;
+        height: 40vh;
+        text-align: center;
+        transition: all .4s ease-in-out;
+        background-color: rgb(213, 197, 199);
+        z-index: 1;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .barra__header--menu ul li a {
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 7vw;
+    }
+
+    /* Estilos para el resto de footers */
+
+    .rfooter {
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        padding-top: 1.5vw;
+
+    }
+
+    .rfooter__iconos {
+        width: 45vw;
+    }
+
+    /* Estilos para la página HOME */
+
+    .h__main {
+        grid-template-rows: 1fr 2.7fr;
+    }
+
+    .h__main--figure figcaption {
+        font-size: 7vw;
+        margin: 0;
+    }
+
+    .h__main--imagen {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .h__main--texto {
+        width: 95vw;
+    }
+
+    .h__main--texto h2 {
+        font-size: 12.5vw;
+    }
+
+    .h__main--texto p {
+        font-size: 3vw;
+    }
+
+}
+
 /* Estilos para el HOME */
 
 .home {
