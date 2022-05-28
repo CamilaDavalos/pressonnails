@@ -5,35 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link de la imagen favicon-->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <title>Inicio</title>
+
+    <!--Link del CSS-->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--Link de la pagina animacion-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Link del Boorstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
-
-    <header>
-        <h1 class="headerIndex__titulo"><a href="./pages/home.html">INGRESAR</a></h1>
+    <!--Barra del menu-->
+    <header class="barra__header--i">
+        <div class="barra__header--titulo">
+            <img src="../img/favicon.png" alt="Logo" class="logoin">
+        </div>
+        <nav class="barra__header--menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../img/barblanco.png" alt="menuBar">
+            </label>
+            <ul>
+                <li><a href="../nuevorepo/pages/home.html">Home</a></li>
+                <li><a href="../nuevorepo/pages/nosotras.html">Nosotras</a></li>
+                <li><a href="../nuevorepo/pages/productos.html">Productos</a></li>
+                <li><a href="../nuevorepo/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
+    <!--Carrusel-->
     <main class="index__main">
-        <figure class="mainIndex__imagen">
-            <img src="img/favicon.png" alt="Logo" height="650" width="1157">
-        </figure>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" class="container">
+                <div class="carousel-item active text-center">
+                    <img src="img/favicon.png" alt="Logo Principal" class="imgmain">
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen1.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseño Minimalista</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen2.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseño Brillos</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen3.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Planta</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen4.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Tablero</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen5.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Alicia</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen6.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Love</h5>
+                    </div>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen7.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Galaxia</h5>
+                    </div>
+                </div>                
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen8.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Perfect</h5>
+                    </div>
+                </div>                
+                <div class="carousel-item text-center">
+                    <img src="img/Imagen9.jpg" class="imgmain">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Diseño Pastel</h5>
+                    </div>
+                </div>
+        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
     </main>
 
-    <footer>
-        <h2 class="footer__titulo"><a href="./pages/contacto.html">CONTACTO</a></h2>
-        <div class="footer__iconos">
-            <figure><a href="https://www.facebook.com/Press-on-Nails-Salta-233058758625843/" target="_blank"><img
-                        src="img/facebook.png" alt="Seguinos en facebook" height="20" width="20"></a></figure>
-            <figure><a href="https://www.instagram.com/pressonnails.salta/" target="_blank"><img src="img/instagram.png"
-                        alt="Seguinos en instagram" height="20" width="20"></a></figure>
-            <figure><a href="https://wa.me/543875742507" target="_blank"><img src="img/whatsapp.png"
-                        alt="Escribinos por wp" height="20" width="20"></a></figure>
-        </div>
+    <footer class="rfooter">
+        <h2 class="footer__titulo"><a href="../nuevorepo/pages/contacto.html">CONTACTO</a></h2>
 
+        <div class="rfooter__iconos">
+            <figure>
+                <a href="https://www.facebook.com/Press-on-Nails-Salta-233058758625843/" target="_blank"><img
+                        src="../img/facebook.png" alt="Seguinos en facebook"></a>
+            </figure>
+            <figure>
+                <a href="https://www.instagram.com/pressonnails.salta/" target="_blank"><img src="../img/instagram.png"
+                        alt="Seguinos en instagram"></a>
+            </figure>
+            <figure>
+                <a href="https://wa.me/543875742507" target="_blank"><img src="../img/whatsapp.png"
+                        alt="Escribinos por wp"></a>
+            </figure>
+        </div>
     </footer>
+
+    <!--Link de JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

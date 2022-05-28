@@ -1,10 +1,9 @@
 /* restear los estilos */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* Insercion de fuentes locales */
@@ -28,68 +27,87 @@
     font-family: "hs";
     src: url("../fonts/High\ Spirited.ttf");
 }
+
 /* Estilos para el INDEX */
-/* Estilos para el titulo */
-
-body{
-    background-color: white;
-}
-
-header{
-    position: relative;
+/*Estilo para el header*/
+.barra__header--i{
     top: 0;
-    left: 0;
-    background-color: white;
+    background-color: rgb(213, 197, 199);
     z-index: 1;
-    height: 117px;
+    height: 7rem;
+    border-bottom: 3px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.headerIndex__titulo{
-    position: relative;
-    top: 50px;
+.logoin{
+    height: calc(7.2rem - 3px);
+    width: auto;
+    display: flex;
+    justify-items: start;
+}
+
+.barra__header--menu{
+    margin-bottom: 1.2vh;
+    margin-right: 0.3vw;
+}
+
+/*menu desplegable*/
+#check,
+.checkbtn{
+    display: none;
+}
+
+.barra__header--menu ul{
+    display: flex;
+    justify-content: end;
+}
+
+.barra__header--menu ul li{
+    list-style-type: none;
+}
+
+.barra__header--menu ul li a{
+    margin: 0 1.2vw;
     text-align: center;
-    font-family: garetbook;
-    font-size: 35px;
-}
-
-.headerIndex__titulo a,
-.headerIndex__titulo a:link,
-.headerIndex__titulo a:visited{
-    text-decoration: none;
+    text-decoration: underline bottom;
     color: gray;
+    font-size: 2.2rem;
+    font-family: garetbook;
 }
-
 /* Estilos para el main */
 
-.index__main{
-    position: relative;
-    background-color: rgb(213, 197, 199);
+.index__main {
+    background-color: rgb(205, 158, 155);
+    border-bottom: 3px solid grey;
 }
 
-.mainIndex__imagen{
-    position: relative;
-    top: 0;
-    text-align: center;
-    margin: 0;
-    contain: content;
-}
-
-.mainIndex__imagen img{
-    width: auto;
+.carousel-item {
     height: 400px;
 }
 
-footer{
-    position: relative;
-    background-color: white;
+.imgmain {
+    height: 400px;
+    width: 650px;
+}
+
+/*Estilo para el footer*/
+
+.rfooter{
+    background-color: rgb(213, 197, 199) ;
+    height: 7.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2vw;
+    padding-top: 1.2vw;
 }
 
 .footer__titulo{
-    position: absolute;
-    right: 100px;
-    top: 25px;
-    background-color: white;
     font-family: garetbook;
+    display: flex;
+    align-items: end;
 }
 
 .footer__titulo a,
@@ -99,61 +117,27 @@ footer{
     color: gray;
 }
 
-.footer__iconos{
-    position: absolute;
-    right: 95px;
-    top: 70px;
+.rfooter__iconos{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 10vw;
 }
 
-.footer__iconos figure{
-    display: inline-block;
-    margin: 0 5px;
+.rfooter__iconos figure img{
+    height: 1.25rem;
+    width: 1.25rem;
 }
+
 /*_______________________________________________________________________________*/
 /* Estilos para el HOME */
 
-.home{
+.home {
     background-color: white
 }
 
-.barra__header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: rgb(213, 197, 199);
-    z-index: 1;
-    height: 117px;
-    border-bottom: 3px solid grey;
-}
 
-.barra__header--titulo a img{
-    height: 112px;
-    width: auto;
-}
 
-.barra__header--menu{
-    position: absolute;
-    top: 40%;
-    right: 0;
-    height: 50px;
-    padding: 5px;
-}
-
-.barra__header--menu ul li{
-    display: inline-block;
-    position: relative;
-    list-style-type: none;
-    margin: 0 20px;
-    height: 40px;
-}
-
-.barra__header--menu ul li a{
-    text-align: center;
-    text-decoration: underline bottom;
-    color: gray;
-    font-size: 35px;
-    font-family: garetbook;
-}
 
 /* Estilos para el HOME MAIN */
 
@@ -164,16 +148,18 @@ footer{
     border-bottom: 3px solid grey;
     overflow: hidden;
 }
+
 .h__main {
     position: relative;
     top: 0;
     left: 0;
     margin: 80px 0 20px 0;
     height: 450px;
-    background-color: rgb(205, 158, 155) ;
+    background-color: rgb(205, 158, 155);
     box-shadow: 1px 5px 25px rgb(213, 197, 199);
 }
-.h__main--imagen{
+
+.h__main--imagen {
     position: relative;
     top: 12.5px;
     left: 0;
@@ -192,54 +178,56 @@ footer{
     border-radius: 5px;
     color: white;
 }
-.h__main--texto h2{
+
+.h__main--texto h2 {
     font-family: hs;
     font-size: 57px;
 }
 
-.h__main--texto h3{
+.h__main--texto h3 {
     font-family: hs;
     font-size: 57px;
 }
 
-.h__main--texto h4{
+.h__main--texto h4 {
     font-family: hs;
     font-size: 57px;
 }
-.h__main--texto p{
+
+.h__main--texto p {
     text-align: justify;
     font-family: garetbook;
     font-size: 15px;
     line-height: 1.5;
 }
 
-.debajo{
+.debajo {
     font-family: hs;
     font-size: 27px;
     color: white;
     margin: 0 60px;
 }
 
-.home__footer{
+.home__footer {
     position: relative;
-    background-color: rgb(213, 197, 199) ;
+    background-color: rgb(213, 197, 199);
     bottom: 0;
     left: 0;
     z-index: 1;
     height: 117px;
 }
 
-.footer__titulohm{
+.footer__titulohm {
     position: absolute;
     right: 100px;
     top: 25px;
-    background-color: rgb(213, 197, 199) ;
+    background-color: rgb(213, 197, 199);
     font-family: garetbook;
 }
 
 .footer__titulohm a,
 .footer__titulohm a:link,
-.footer__titulohm a:visited{
+.footer__titulohm a:visited {
     text-decoration: none;
     color: gray;
 }
@@ -252,17 +240,18 @@ footer{
     border-bottom: 3px solid grey;
     overflow: hidden;
 }
+
 .n__main--uno {
     position: relative;
     top: 0;
     left: 0;
     margin: 80px 0 20px 0;
     height: 900px;
-    background-color: rgb(205, 158, 155) ;
+    background-color: rgb(205, 158, 155);
     box-shadow: 1px 5px 25px rgb(213, 197, 199);
 }
 
-.n__main--uno img{
+.n__main--uno img {
     top: 12.5px;
     left: 0;
     margin: 10px 50px;
@@ -271,7 +260,8 @@ footer{
     border-radius: 5%;
     text-align: right
 }
-.n__main--uno h1{
+
+.n__main--uno h1 {
     font-family: hs;
     font-size: 100px;
     top: 150px;
@@ -280,7 +270,8 @@ footer{
     color: white;
     text-align: center;
 }
-.n__main--uno p{
+
+.n__main--uno p {
     text-align: justify;
     font-family: garetbook;
     font-size: 20px;
@@ -288,6 +279,7 @@ footer{
     color: white;
     text-align: center;
 }
+
 /* Estilos para el PRODUCTO*/
 .p__main {
     position: relative;
@@ -296,16 +288,18 @@ footer{
     border-bottom: 3px solid grey;
     overflow: hidden;
 }
+
 .p__main--dv {
     position: relative;
     top: 0;
     left: 0;
     margin: 80px 0 20px 0;
     height: 200px;
-    background-color: rgb(205, 158, 155) ;
+    background-color: rgb(205, 158, 155);
     box-shadow: 1px 5px 25px rgb(213, 197, 199);
 }
-.p__main--dv h1{
+
+.p__main--dv h1 {
     font-family: hs;
     font-size: 100px;
     top: 150px;
@@ -314,7 +308,8 @@ footer{
     color: white;
     text-align: center;
 }
-.p__main--dv p{
+
+.p__main--dv p {
     text-align: justify;
     font-family: garetbook;
     font-size: 20px;
@@ -322,6 +317,7 @@ footer{
     color: white;
     text-align: center;
 }
+
 .p__mv {
     position: relative;
     top: 0;
@@ -332,6 +328,7 @@ footer{
     box-shadow: 1px 5px 25px rgb(213, 197, 199);
     text-align: center;
 }
+
 .video {
     top: 30px;
     left: 0;
@@ -340,6 +337,7 @@ footer{
     width: auto;
     text-align: right
 }
+
 /* Estilos para el CONTACTO*/
 
 .cmain {
@@ -350,7 +348,8 @@ footer{
     overflow: hidden;
     height: 800px;
 }
-.cmain h1{
+
+.cmain h1 {
     font-family: garetbook;
     font-size: 40px;
     top: 250px;
@@ -419,7 +418,7 @@ input {
 }
 
 .main__enviar:hover,
-.main__rees:hover{
+.main__rees:hover {
     box-shadow: 3px 3px 6px white;
 }
 
